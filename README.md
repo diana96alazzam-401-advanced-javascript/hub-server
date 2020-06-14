@@ -4,9 +4,9 @@
 
 ### Links and Resources
 
-- [Pull request]()
-- [ci/cd]() (GitHub Actions)
-- [back-end server url]()
+- [Pull request](https://github.com/diana96alazzam-401-advanced-javascript/hub-server/pull/1)
+- [ci/cd](https://github.com/diana96alazzam-401-advanced-javascript/hub-server/blob/lab-16/.github/workflows/node.yml) (GitHub Actions)
+<!-- - [back-end server url]() -->
 
 
 ### Setup
@@ -28,4 +28,4 @@
 
 #### UML
 
-- ![UML]()
+![UML](./assets/lab16-1.png)
