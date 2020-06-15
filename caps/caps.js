@@ -1,8 +1,6 @@
 'use strict';
 
 const net = require('net');
-const client = new net.Socket();
-const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 3000;
 const uuidv4 = require('uuid').v4;
 
@@ -12,10 +10,10 @@ server.listen(PORT,()=> console.log(`The server is up on PORT ${PORT}`));
 const socketPool = {};
 
 server.on('connection', (socket)=> {
-    const id = `socket-${uuidv4()}`;
-    socketPool[id] = socket;
-    socket.on('data', (buffer)=> dispatchEvent(buffer));  
-})
+  const id = `socket-${uuidv4()}`;
+  socketPool[id] = socket;
+  socket.on('data', (buffer)=> dispatchEvent(buffer));  
+});
 function dispatchEvent(buffer) {
   const data = JSON.parse(buffer.toString().trim());
   let verfication=0;
@@ -26,7 +24,7 @@ function dispatchEvent(buffer) {
     if(key === 'event'){
       verfication++;
     }
-  })
+  });
   if (verfication ===2){
     broadcast(data);
   }

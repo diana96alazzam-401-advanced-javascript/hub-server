@@ -14,7 +14,7 @@ client.connect(PORT, HOST, () => {
     if (event.event === 'pickup') {
       pickUpLogger(event.payload);
     }
-  })
+  });
 });
 
 client.on('error', (err) => console.log(`Driver Client error ${err.message}`));
@@ -25,14 +25,14 @@ function pickUpLogger(payload){
     console.log(`DRIVER: picked up ${payload.orderId}`);
     const message = JSON.stringify({
       event:'in-transit',
-      payload:payload
+      payload:payload,
     });
     client.write(message);
     // events.emit('in-transit', payload);
     setTimeout(()=>{
       const message = JSON.stringify({
         event:'delivered',
-        payload:payload
+        payload:payload,
       });
       client.write(message);
       // events.emit('delivered', payload);
