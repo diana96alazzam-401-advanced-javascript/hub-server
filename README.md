@@ -4,7 +4,7 @@
 
 ### Links and Resources
 
-- [Pull request](https://github.com/diana96alazzam-401-advanced-javascript/hub-server/pull/1)
+- [Pull request](https://github.com/diana96alazzam-401-advanced-javascript/hub-server/pull/2)
 - [ci/cd](https://github.com/diana96alazzam-401-advanced-javascript/hub-server/blob/lab-16/.github/workflows/node.yml) (GitHub Actions)
 <!-- - [back-end server url]() -->
 
