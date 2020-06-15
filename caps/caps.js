@@ -47,4 +47,4 @@ function logger(event, payload){
 
 server.on('error', (e) => console.log('Caps SERVER ERROR', e.message));
 
-// module.exports = logger;
+module.exports = logger;

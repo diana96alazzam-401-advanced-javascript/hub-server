@@ -4,6 +4,7 @@ let pickUpLogger = require('../driver');
 let thankLogger = require('../vendor');
 
 describe('Event handlers tests', ()=> {
+  let event = 'pickup';
   let payload = {
     storeName: 'diana',
     orderId: 89475,
@@ -18,7 +19,7 @@ describe('Event handlers tests', ()=> {
     consoleSpy.mockRestore();
   });
   it('can log using logger function in caps', ()=> {
-    logger(payload);
+    logger(event,payload);
     expect(consoleSpy).toHaveBeenCalled();
   });
   it('can log using pickUpLogger function in driver', ()=> {
