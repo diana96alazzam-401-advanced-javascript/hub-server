@@ -1,0 +1,30 @@
+{
+  "name": "hub-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --coverage --verbose --forceExit --maxWorkers=10",
+    "lint": "eslint '**/*.js'",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diana96alazzam-401-advanced-javascript/hub-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diana96alazzam-401-advanced-javascript/hub-server/issues"
+  },
+  "homepage": "https://github.com/diana96alazzam-401-advanced-javascript/hub-server#readme",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "jest": "^26.0.1"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "faker": "^4.1.0"
+  }
+}
